@@ -26,7 +26,7 @@ Rain_ITU is a project dedicated to developing an innovative rainfall detection s
 
 ## Introduction
 
-The project is pioneering and is designed to detect and classify rainfall intensity through the analysis of sound data. This involves capturing a 19-minute audio recording of rainfall, which is then segmented into one-second intervals. Each segment is analyzed to determine its root mean square (RMS) and decibel (dB) levels. Following this, the data is uploaded to the Edge Impulse platform, where it undergoes further processing, including detailed classification and machine learning training. This methodical approach aims to refine the accuracy of rainfall intensity measurement using audio analysis techniques.
+The project is pioneering and is designed to detect and classify rainfall intensity through the analysis of sound data. This involved capturing a 2-hour audio recording of rainfall, which is then segmented into one-second intervals. Each segment is analyzed to determine its root mean square (RMS) and decibel (dB) levels. Following this, the data is uploaded to the Edge Impulse platform, where it undergoes further processing, including detailed classification and machine learning training. This methodical approach aims to refine the accuracy of rainfall intensity measurement using audio analysis techniques.
 
 ## Steps Involved
 
