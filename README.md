@@ -1,15 +1,20 @@
-#Rain ITU Project
+# Rain ITU Project
 
 _by:_
+
+
 _Abdullelah Al-Hussain    221423053_
+
+
 _Hussain AlMazyadi        221428946_
+
+
 _Saud Al-Hathlool         221407718_
 
 ## Objective
 
 Rain_ITU is a project dedicated to developing an innovative rainfall detection system that makes use of sound data to accurately classify different levels of rainfall intensity. By recording, segmenting, and analyzing audio data, the project strives to establish a working and reliable method for quantifying rainfall intensity. This project aims to provide accurate, real-time measurements that can be useful for weather forecasting and climate research, improving our understanding and response to meteorological conditions.
 
-![Graphs](WhatsApp Image 2024-05-07 at 10.03.45 AM.jpeg)
 
 ## Material
  
@@ -17,7 +22,7 @@ Rain_ITU is a project dedicated to developing an innovative rainfall detection s
 |------ |-------------|
 |01     |ESP32 WROOM  |
 |02     |Edge Impulse |
-![ESP32WROOM](esp-wroom-32-esp32-esp-32s-development-board.jpg)
+
 
 ## Introduction
 
