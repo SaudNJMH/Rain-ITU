@@ -72,12 +72,6 @@ This analysis will help in the development of algorithms that predict weather co
 ![mel)](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/75f2b140-fcd2-409f-872b-d86f5a814bf9)
 
 
-**On-Device Performance and Live Classification**: 
-- The on-device performance metrics indicate an inference time of 23 ms on the ESP32 WROOM microcontroller, showcasing the model's effectiveness for real-time applications. This rapid processing capability is critical for deploying the system in real-time scenarios where immediate rainfall detection is required.
-
-
-![WhatsApp Image 2024-05-12 at 5 33 03 PM (1)](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/9e6efaaf-0832-4a28-bb00-7f07464e06e8)
-
 
 These findings and visual representations validates the project's approach but also underscore its potential to enhance rainfall monitoring through sound data analysis. The successful classification and real-time application of our model highlight its potential benefits for weather forecasting and environmental monitoring, particularly in regions prone to varying rainfall intensities like Saudi Arabia.
 
