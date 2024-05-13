@@ -37,16 +37,16 @@ The project is pioneering and is designed to detect and classify rainfall intens
 5. Classification: Edge Impulse is used to classify the sound data into different rainfall intensities.
 6. Training: The data is trained to improve the accuracy of rainfall intensity classification.
 7. Arduino Library: A library is created for Arduino to interface with the rainfall detection system.
-8. Hardware Setup: The system is deployed on an ESP32 WROOM microcontroller, connected to a microphone for real-timesound recording.
+8. Hardware Setup: The system is deployed on an ESP32 WROOM microcontroller, connected to a microphone for real-time recording.
 9. Rainfall Detection: The system can now detect and quantify rainfall intensity based on recorded sound data.
 
 ## Observations and Results
 
 The Rain_ITU project has diligently recorded, analyzed, and classified rainfall intensity using sophisticated sound data processing. Key aspects of the project involved extensive data collection and thorough analysis to ensure accurate rainfall detection and classification.
 
-**Data Collection**: Our data acquisition process captured audio samples across various weather conditions and locations to ensure a comprehensive dataset. Notably, specific attention was given to data collected on April 2024 and May 2024, during which we recorded significant rainfall events in the eastern region of Saudi Arabia. On April, the recorded precipitation reached 11 mm, while on May, it reduced to 3 mm, however, during the making of this project, May has yet to end, but we do not anticipate any upcoming rainall through the rest of may. this data provided us with a different range of intensities to enhance our model's robustness and accuracy. 
+**Data Collection**: Our data acquisition process captured audio samples across various weather conditions and locations to ensure a comprehensive dataset. Notably, specific attention was given to data collected in April 2024 and May 2024, during which we recorded significant rainfall events in the eastern region of Saudi Arabia. On April, the recorded precipitation reached 11 mm, while in May, it reduced to 3 mm, however, during the making of this project, May has yet to end, but we do not anticipate any upcoming rainall through the rest of May. this data provided us with a different range of intensities to enhance our model's robustness and accuracy. 
 
-According to [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia-weather-may) On May 2024, the precipitation in Dammam was recorded as 3 mm, which is typical for this period as May marks the onset of the hotter months and generally experiences very low rainfall. This specific measurement aligns with the expected climatic patterns for Dammam during May, where the region sees very limited rainfall days, totaling about 0.8 days of rain throughout the month. [name of link](https://www.weather-atlas.com/en/saudi-arabia/dammam-weather-april) also stated that pn April 2024, Dammam experienced significant rainfall as part of a wider weather pattern affecting the Persian Gulf region, which led to widespread flooding across various areas including Dammam. This event was characterized by heavy rainfall and thunderstorms, causing disruptions such as road tunnel closures and school cancellations in the area. 
+According to [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia-weather-may) On May 2024, the precipitation in Dammam was recorded as 3 mm, which is typical for this period as May marks the onset of the hotter months and generally experiences very low rainfall. This specific measurement aligns with the expected climatic patterns for Dammam during May, where the region sees very limited rainfall days, totaling about 0.8 days of rain throughout the month. [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia/dammam-weather-april) also stated that in April 2024, Dammam experienced significant rainfall as part of a wider weather pattern affecting the Persian Gulf region, which led to widespread flooding across various areas including Dammam. This event was characterized by heavy rainfall and thunderstorms, causing disruptions such as road tunnel closures and school cancellations in the area. 
 
 In general, the month of April in Dammam is marked by rising temperatures and a modest amount of rainfall, with an average precipitation accumulation of about 11mm over approximately 6.7 days throughout the month. This indicates that the rainfall on April 16th was particularly severe and atypical for the region's usual climate patterns in April. 
 
@@ -65,14 +65,16 @@ In general, the month of April in Dammam is marked by rising temperatures and a 
 
 **Spectrogram Analysis**: 
 - The Mel Energies plot is crucial for observing how energy is distributed across different frequencies over time, aiding significantly in our feature extraction strategies. This spectrogram analysis is vital for understanding the characteristics of rainfall sounds.
+
+
 ![mel)](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/75f2b140-fcd2-409f-872b-d86f5a814bf9)
 
 
 **On-Device Performance and Live Classification**: 
 - The on-device performance metrics indicate an inference time of 23 ms on the ESP32 WROOM microcontroller, showcasing the model's effectiveness for real-time applications. This rapid processing capability is critical for deploying the system in real-time scenarios where immediate rainfall detection is required.
+
+
 ![WhatsApp Image 2024-05-12 at 5 33 03 PM (1)](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/9e6efaaf-0832-4a28-bb00-7f07464e06e8)
-- Live classification tests further validate our model’s real-world applicability, capturing and classifying audio data in real-time with high accuracy, proving the system's readiness for operational use.
-![WhatsApp Image 2024-05-12 at 5 33 02 PM](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/3c7f3f09-96cd-40af-8a99-6e3fe9d9d767)
 
 
 These findings and visual representations not only validate the Rain_ITU project's methodological approach but also underscore its potential to revolutionize rainfall monitoring through sound data analysis. The successful classification and real-time application of our model highlight its potential benefits for weather forecasting and environmental monitoring, particularly in regions prone to varying rainfall intensities like Saudi Arabia.
