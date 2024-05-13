@@ -22,6 +22,12 @@ Rain_ITU is a project dedicated to developing an innovative rainfall detection s
 |------ |-------------|
 |01     |ESP32 WROOM  |
 |02     |Edge Impulse |
+|03     |Arduino Nano |
+|04     |TML Shield   |
+|05     |Microphone   |
+
+
+
 
 
 ## Introduction
@@ -30,7 +36,7 @@ The project is pioneering and is designed to detect and classify rainfall intens
 
 ## Steps Involved
 
-1. Audio Recording: A 2-hour audio clip of rainfall is recorded.
+1. Audio Recording: A clip of rainfall is recorded.
 2. Segmentation: The audio clip is divided into individual second-long segments.
 3. Data Analysis: RMS and dB values are extracted from each segment.
 4. Data Uploading: The segmented audio data is uploaded to Edge Impulse for further processing.
@@ -42,13 +48,12 @@ The project is pioneering and is designed to detect and classify rainfall intens
 
 ## Observations and Results
 
-The Rain_ITU project has diligently recorded, analyzed, and classified rainfall intensity using sophisticated sound data processing. Key aspects of the project involved extensive data collection and thorough analysis to ensure accurate rainfall detection and classification.
+[Abha in April, resulted in 11mm] r?
+[Ahsa in May, resulted in 3mm, with a decrease due to drier region] r?
 
-**Data Collection**: Our data acquisition process captured audio samples across various weather conditions and locations to ensure a comprehensive dataset. Notably, specific attention was given to data collected in April 2024 and May 2024, during which we recorded significant rainfall events in the eastern region of Saudi Arabia. On April, the recorded precipitation reached 11 mm, while in May, it reduced to 3 mm, however, during the making of this project, May has yet to end, but we do not anticipate any upcoming rainall through the rest of May. this data provided us with a different range of intensities to enhance our model's robustness and accuracy. 
+[provide screenshots]
 
-According to [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia-weather-may) On May 2024, the precipitation in Dammam was recorded as 3 mm, which is typical for this period as May marks the onset of the hotter months and generally experiences very low rainfall. This specific measurement aligns with the expected climatic patterns for Dammam during May, where the region sees very limited rainfall days, totaling about 0.8 days of rain throughout the month. [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia/dammam-weather-april) also stated that in April 2024, Dammam experienced significant rainfall as part of a wider weather pattern affecting the Persian Gulf region, This event was characterized by heavy rainfall and thunderstorms, causing disruptions such as road tunnel closures and school cancellations in the area. 
 
-In general, the month of April in Dammam is marked by rising temperatures and a modest amount of rainfall, with an average precipitation accumulation of about 11mm over approximately 6.7 days throughout the month. The rainfall on April 16th was particularly severe and atypical for the region's usual climate patterns. 
 
 
 
