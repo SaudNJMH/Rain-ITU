@@ -46,25 +46,34 @@ The project is pioneering and is designed to detect and classify rainfall intens
 8. Hardware Setup: The system is deployed on an ESP32 WROOM microcontroller, connected to a microphone for real-time recording.
 9. Rainfall Detection: The system can now detect and quantify rainfall intensity based on recorded sound data.
 
+
+<img width="348" alt="Screenshot 2024-05-13 at 8 50 16 PM" src="https://github.com/SaudNJMH/Rain-ITU/assets/167855783/265a0945-9391-418f-9661-13710f5aabaa">
+
+
+In the development of the project, using recorded audio, several steps are involved. Initially, audio of rainfall is captured and segmented into one-second intervals. Each segment is then analyzed for its root mean square (RMS) and decibel (dB) levels, which quantify the audio's power and perceived loudness. This segmented data is uploaded to the Edge Impulse platform, which is leveraged for further processing and analysis.
+
+In the classification phase, Mel Frequency Cepstral Coefficients (MFCC) inputs are used because of their effectiveness in handling audio data. This method transforms the audio signals into a representation that captures the power spectrum of sound, making it suitable for audio classification tasks. The system classifies each data sample into one of ten classes based on rainfall intensity, ranging from R1 (the lowest intensity) to R10 (the highest intensity). This classification helps in accurately assessing the intensity of rainfall from the recorded audio data.
+
+To enhance the accuracy of the system, the classified data goes to a training phase. This training optimizes the system's ability to distinguish between different intensities of rainfall, making the detection more reliable. An Arduino library is created to interface seamlessly with the rainfall detection system, allowing for integration into larger projects or systems.
+
+The hardware setup for this project involves deploying Arduino Nano, which is connected to a microphone for real-time audio recording. both of these are connected to a tiny machine learning (TML) board. This setup enables the system to continuously monitor and detect rainfall intensity based on the recorded audio, providing live updates and data.
+
+Overall, this system represents a significant advancement in environmental monitoring technologies, allowing for the automated and accurate detection of rainfall intensity, which can be crucial for weather forecasting, agricultural planning, and management of water resources.
+
 ## Observations and Results
 
-[Abha in April, resulted in 11mm] r?
-[Ahsa in May, resulted in 3mm, with a decrease due to drier region] r?
+We tested a few samples in different regions in Saudi Arabia throughout 2024, notable variations in rainfall intensity were recorded. Specifically, the Abha region experienced significantly higher rainfall, classified in the highest intensity class, R10, with a recorded precipitation of 11 mm. This contrasts with the drier Al-Ahsa area, where rainfall was classified at a much lower intensity, R4, with precipitation measuring only 3 mm.
 
-[provide screenshots]
-
+These findings illustrate the difference in rainfall patterns within Saudi Arabia, highlighting the potential of the developed system to provide detailed and localized weather monitoring. The ability to classify rainfall intensity through audio data offers a practical tool for resource management, agricultural planning, and emergency preparedness in regions prone to varying weather conditions. Such detailed data acquisition is important for enhancing the accuracy of weather forecasting models and for implementing region-specific strategies to mitigate the impacts of weather variability.
 
 
-
-
-**Analysis and Model Testing**: 
-- The data explorer visualization demonstrates a clear distinction in the classification of correct and incorrect labels across multiple samples, underlining the effectiveness of our feature extraction process.
+The data explorer visualization demonstrates a clear distinction in the classification of correct and incorrect labels across multiple samples, underlining the effectiveness of our feature extraction process. This affects the accuracy of the data, checking whether the location is correct or not.
 
 
 ![Data Explorer Results](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/888f06a0-0b9a-47f6-8b92-304f79411fa7)
 
 
-- The confusion matrix from our model testing shows a high overall accuracy of 95.33%, with certain classifications such as light, moderate, and heavy rain showing higher precision, which affirms the model's capability in handling real-world variability.
+The confusion matrix from our model testing shows a high overall accuracy of 95.33%, with certain classifications ranging from R1 to R10, which affirms the model's capability in handling real-world variability.
 
 <img width="545" alt="Screenshot 2024-05-13 at 10 39 03 AM" src="https://github.com/SaudNJMH/Rain-ITU/assets/167855783/0d4fdbbb-7169-43ed-a805-5409e285ef8a">
 
