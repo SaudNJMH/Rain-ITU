@@ -30,7 +30,7 @@ The project is pioneering and is designed to detect and classify rainfall intens
 
 ## Steps Involved
 
-1. Audio Recording: A 19-minute audio clip of rainfall is recorded.
+1. Audio Recording: A 2-hour audio clip of rainfall is recorded.
 2. Segmentation: The audio clip is divided into individual second-long segments.
 3. Data Analysis: RMS and dB values are extracted from each segment.
 4. Data Uploading: The segmented audio data is uploaded to Edge Impulse for further processing.
@@ -44,13 +44,24 @@ The project is pioneering and is designed to detect and classify rainfall intens
 
 The Rain_ITU project has diligently recorded, analyzed, and classified rainfall intensity using sophisticated sound data processing. Key aspects of the project involved extensive data collection and thorough analysis to ensure accurate rainfall detection and classification.
 
-**Data Collection**: Our data acquisition process captured audio samples across various weather conditions and locations to ensure a comprehensive dataset. Notably, specific attention was given to data collected on April 16 and May 30, during which we recorded significant rainfall events in AlAhsa, Saudi Arabia. On April 16, the recorded precipitation reached 15 mm, while on May 30, it escalated to 25 mm, providing us with a different range of intensities to enhance our model's robustness and accuracy.
+**Data Collection**: Our data acquisition process captured audio samples across various weather conditions and locations to ensure a comprehensive dataset. Notably, specific attention was given to data collected on April 2024 and May 2024, during which we recorded significant rainfall events in the eastern region of Saudi Arabia. On April, the recorded precipitation reached 11 mm, while on May, it reduced to 3 mm, however, during the making of this project, May has yet to end, but we do not anticipate any upcoming rainall through the rest of may. this data provided us with a different range of intensities to enhance our model's robustness and accuracy. 
+
+According to [Weather Atlas](https://www.weather-atlas.com/en/saudi-arabia-weather-may) On May 2024, the precipitation in Dammam was recorded as 3 mm, which is typical for this period as May marks the onset of the hotter months and generally experiences very low rainfall. This specific measurement aligns with the expected climatic patterns for Dammam during May, where the region sees very limited rainfall days, totaling about 0.8 days of rain throughout the month. [name of link](https://www.weather-atlas.com/en/saudi-arabia/dammam-weather-april) also stated that pn April 2024, Dammam experienced significant rainfall as part of a wider weather pattern affecting the Persian Gulf region, which led to widespread flooding across various areas including Dammam. This event was characterized by heavy rainfall and thunderstorms, causing disruptions such as road tunnel closures and school cancellations in the area. 
+
+In general, the month of April in Dammam is marked by rising temperatures and a modest amount of rainfall, with an average precipitation accumulation of about 11mm over approximately 6.7 days throughout the month. This indicates that the rainfall on April 16th was particularly severe and atypical for the region's usual climate patterns in April. 
+
+
 
 **Analysis and Model Testing**: 
 - The data explorer visualization demonstrates a clear distinction in the classification of correct and incorrect labels across multiple samples, underlining the effectiveness of our feature extraction process.
+
+
 ![Data Explorer Results](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/888f06a0-0b9a-47f6-8b92-304f79411fa7)
-- The confusion matrix from our model testing shows a high overall accuracy of 93.3%, with certain classifications such as light, moderate, and heavy rain showing higher precision, which affirms the model's capability in handling real-world variability.
-![confusion matrix](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/92220e6c-2bd1-4f77-8a79-5e157055d455)
+
+
+- The confusion matrix from our model testing shows a high overall accuracy of 95.33%, with certain classifications such as light, moderate, and heavy rain showing higher precision, which affirms the model's capability in handling real-world variability.
+
+<img width="545" alt="Screenshot 2024-05-13 at 10 39 03 AM" src="https://github.com/SaudNJMH/Rain-ITU/assets/167855783/0d4fdbbb-7169-43ed-a805-5409e285ef8a">
 
 **Spectrogram Analysis**: 
 - The Mel Energies plot is crucial for observing how energy is distributed across different frequencies over time, aiding significantly in our feature extraction strategies. This spectrogram analysis is vital for understanding the characteristics of rainfall sounds.
