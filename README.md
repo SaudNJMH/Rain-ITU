@@ -64,7 +64,9 @@ In general, the month of April in Dammam is marked by rising temperatures and a 
 <img width="545" alt="Screenshot 2024-05-13 at 10 39 03 AM" src="https://github.com/SaudNJMH/Rain-ITU/assets/167855783/0d4fdbbb-7169-43ed-a805-5409e285ef8a">
 
 **Spectrogram Analysis**: 
-- The Mel Energies plot is crucial for observing how energy is distributed across different frequencies over time, aiding significantly in our feature extraction strategies. This spectrogram analysis is vital for understanding the characteristics of rainfall sounds.
+This spectrogram shows Mel Energies, the focus is on how sound energy distributes across various frequencies, reflecting different characteristics of the rainfall. The Mel scale enhances the analysis by aligning more closely with human auditory perceptions, which is beneficial for applications that involve human interaction or that mimic human sensory processing, such as advanced sound engineering or environmental sound recognition systems. 
+
+This analysis will help in the development of algorithms that predict weather conditions from acoustic data, potentially offering a novel approach to weather monitoring that could complement traditional methods like radar and satellite imagery. This could be particularly useful in remote areas or in developing countries where traditional, expensive weather monitoring infrastructure is not feasible.
 
 
 ![mel)](https://github.com/SaudNJMH/Rain-ITU/assets/167855783/75f2b140-fcd2-409f-872b-d86f5a814bf9)
