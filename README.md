@@ -61,6 +61,16 @@ The hardware setup for this project involves deploying Arduino Nano, which is co
 
 Overall, this system represents a significant advancement in environmental monitoring technologies, allowing for the automated and accurate detection of rainfall intensity, which can be crucial for weather forecasting, agricultural planning, and management of water resources.
 
+## Block Diagram
+
+The block diagram illustrates the workflow of a system designed to classify rain audio using an Arduino Nano and Edge Impulse. The process starts with rain audio being captured by a microphone. This audio signal is then sent to a TML Shield connected to the Arduino Nano, which handles the preliminary processing. Simultaneously, code is uploaded to the Arduino Nano to control the data flow and processing steps. The TML Shield, interfacing with Edge Impulse, processes the audio signal further to extract relevant features. These features are then fed into a processing unit that applies machine learning models to classify the audio data. The final output consists of classifications and their corresponding accuracy metrics. The system ensures real-time processing and accurate classification of rain audio, making it useful for various applications in environmental monitoring and smart city infrastructure.
+
+
+<img width="936" alt="Screenshot 2024-05-14 at 11 23 02 AM" src="https://github.com/SaudNJMH/Rain-ITU/assets/167855783/03313148-8d4e-4c0b-b6f9-b6e32809f5f3">
+
+
+
+
 ## Observations and Results
 
 We tested a few samples in different regions in Saudi Arabia throughout 2024, notable variations in rainfall intensity were recorded. Specifically, the Abha region experienced significantly higher rainfall, classified in the highest intensity class, R10, with a recorded precipitation of 11 mm. This contrasts with the drier Al-Ahsa area, where rainfall was classified at a much lower intensity, R4, with precipitation measuring only 3 mm.
