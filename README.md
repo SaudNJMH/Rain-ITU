@@ -12,6 +12,7 @@ _Hussain AlMazyadi        221428946_
 _Saud Al-Hathlool         221407718_
 
 
+
 ## Objective
 
 Rain_ITU is a project dedicated to developing an innovative rainfall detection system that makes use of sound data to accurately classify different levels of rainfall intensity. By recording, segmenting, and analyzing audio data, the project strives to establish a working and reliable method for quantifying rainfall intensity. This project aims to provide accurate, real-time measurements that can be useful for weather forecasting and climate research, improving our understanding and response to meteorological conditions.
