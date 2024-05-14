@@ -21,11 +21,10 @@ Rain_ITU is a project dedicated to developing an innovative rainfall detection s
  
 |number | name        |
 |------ |-------------|
-|01     |ESP32 WROOM  |
-|02     |Edge Impulse |
-|03     |Arduino Nano |
-|04     |TML Shield   |
-|05     |Microphone   |
+|01     |Edge Impulse |
+|02     |Arduino Nano BLE33 |
+|03     |TML Shield   |
+|04     |Microphone OV7675 |
 
 
 
